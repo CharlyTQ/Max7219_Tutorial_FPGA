@@ -1,0 +1,10 @@
+/db
+/incremental_db
+/output_files
+/simulation
+
+Max7216.qpf
+Max7216.qsf
+Max7216.qws
+DriverMatrice_TB.vhd.bak
+Max7216_nativelink_simulation.rpt
