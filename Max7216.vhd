@@ -72,9 +72,9 @@ architecture rtl of MAX7216 is
 						when 1 =>
 							otrame <="0000" & "0001" & "00000000" ;   --std_logic_vector(to_unsigned(t,4))
 						when 2 =>
-							otrame <="0000" & "0010" & "00100100" ;    --std_logic_vector(to_unsigned(t,4)) 
+							otrame <="0000" & "0010" & "00100100" ;   --std_logic_vector(to_unsigned(t,4)) 
 						when 3 =>
-							otrame <="0000" & "0011" & "00000000" ;
+							otrame <="0000" & "0011" & "00000000" ;   --Figure formed by the LED Matrix
 						when 4 =>
 							otrame <="0000" & "0100" & "01000010" ;
 						when 5 =>
