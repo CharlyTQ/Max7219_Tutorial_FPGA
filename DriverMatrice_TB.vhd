@@ -18,7 +18,7 @@ architecture rtl of DriverMatrice_TB is
 				Cl10k : out std_logic);
     END COMPONENT;
 
-
+	signal tramescan 			: std_logic_vector(15 downto 0):="0000101100000111";
 	signal iclk10k : std_logic := '0';
 	signal data : std_logic;
 	signal itrame : std_logic_vector (15 downto 0) := (others => '0');
