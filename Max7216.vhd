@@ -70,21 +70,21 @@ architecture rtl of MAX7216 is
 				when state2 => 
 					case t is
 						when 1 =>
-							otrame <="0000" & "0001" & "00000000" ;   --std_logic_vector(to_unsigned(t,4))
+							otrame <="0000" & "0001" & "11111111" ;   --std_logic_vector(to_unsigned(t,4))
 						when 2 =>
-							otrame <="0000" & "0010" & "00100100" ;   --std_logic_vector(to_unsigned(t,4)) 
+							otrame <="0000" & "0010" & "00011000" ;   --std_logic_vector(to_unsigned(t,4)) 
 						when 3 =>
-							otrame <="0000" & "0011" & "00000000" ;   --Figure formed by the LED Matrix
+							otrame <="0000" & "0011" & "00011000" ;   --Figure formed by the LED Matrix
 						when 4 =>
-							otrame <="0000" & "0100" & "01000010" ;
+							otrame <="0000" & "0100" & "00011000" ;
 						when 5 =>
-							otrame <="0000" & "0101" & "00111100" ;
+							otrame <="0000" & "0101" & "00011000" ;
 						when 6 =>
-							otrame <="0000" & "0110" & "00000000" ;
+							otrame <="0000" & "0110" & "00011000" ;
 						when 7 =>
-							otrame <="0000" & "0111" & "00000000" ;
+							otrame <="0000" & "0111" & "00011000" ;
 						when 8 =>
-							otrame <="0000" & "1000" & "00000000" ;
+							otrame <="0000" & "1000" & "11111111" ;
 						when others => null;
 					  state <= cpt;
 					end case;
